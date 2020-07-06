@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SHOW DO MILHÃO</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    </head>
+    <div class="lateral">
+        <h2>AJUDA</h2>
+        <!–-menu superior-->
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="imagens/cartas.png" width="80" height="80" alt="Submit" id="cartas" onclick="clickCartas()"/></th>
+                    <th><img src="imagens/placas.png" width="80" height="80" id="placas" onclick="clickPlaca()"/></th>
+                    <th><img src="imagens/convidados.png" width="80" height="80" id="convidados" onclick="clickConvidado()" /></th>
+                    <th><img src="imagens/stop.png" width="80" height="80" id="desistir" onclick="clickDesistir()"/></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p>Cartas</p></td>
+                    <td><p>Placas</p></td>
+                    <td><p>Convidados</p></td>
+                    <td><p>Desistir</p></td>
+                </tr>
+            </tbody>        
+        </table>
+    </div>
+    <body>
+        <div class="grid">
+            <div id="questao">
+                <img src="imagens/logoShowDoMilhao.png" width="360" height="180"/>             
+                <hr style="margin-bottom: 20px">
+                <!-–Formulário com suas id que serão alteradas ao passar do jogo-->
+                <p id="pergunta"></p>
+                <div class="botoesOpcoes">
+                    <button id="caixa0"><span id="opcao0"></span></button>
+                    <button id="caixa1"><span id="opcao1"></span></button><br>
+                    <button id="caixa2"><span id="opcao2"></span></button>
+                    <button id="caixa3"><span id="opcao3"></span></button>
+                </div>
+                <hr style="margin-top: 50px">
+                <footer>
+                    <p id="progress">Valendo X de Y</p>
+                </footer>
+                <footer> 
+                    <!-–tablea 'invisível' que será alterada quando for selecionado alguma ajuda-->
+                    <table id="tabelaAjuda">
+                        <thead>
+                            <tr>
+                                <th><p id="ajudaC"></p></th>
+                                <th><p id="ajudaC1"></p></th>
+                                <th><p id="ajudaC2"></p></th>
+                                <th><p id="ajudaC3"></p></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p id="ajuda"></p></td>
+                                <td><p id="ajuda1"></p></td>
+                                <td><p id="ajuda2"></p></td>
+                                <td><p id="ajuda3"></p></td>
+                            </tr>
+                        </tbody>                        
+                    </table>                                                       
+                </footer>
+
+            </div>    
+        </div>
+        <script src="js/questao.js"></script>
+        <script src="js/pergunta.js"></script>
+        <script src="js/funcoes.js"></script>
+        <script src="js/eventos.js"></script> 
+    </body>
+</html>
